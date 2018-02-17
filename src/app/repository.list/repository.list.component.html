@@ -1,0 +1,15 @@
+<h1>Google Github repositories</h1>
+<table *ngIf="repoList">
+  <th>Name</th>
+  <th>Description</th>
+  <th>Open Issues</th>
+  <th>Watchers</th>
+  <tr *ngFor="let repo of repoList">
+    <td><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></td>
+    <td>{{repo.description}}</td>
+    <td>{{repo.open_issues}}</td>
+    <td>{{repo.watchers}}</td>
+  </tr>
+</table>
+
+<div *ngIf="!repoList">No Data Available in the current time</div>

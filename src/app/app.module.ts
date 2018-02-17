@@ -1,18 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
+import { RepositoryListService } from './service/repository.list.service';
 
-import { AppComponent } from './app.component';
-
+import { RepositoryListComponent } from './repository.list/repository.list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    RepositoryListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [RepositoryListService],
+  bootstrap: [RepositoryListComponent]
 })
 export class AppModule { }

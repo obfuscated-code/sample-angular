@@ -1,6 +1,6 @@
 # Demo1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+This project is a sample AngularJs 5 project with Jasmine unit tests.
 
 ## Development server
 
