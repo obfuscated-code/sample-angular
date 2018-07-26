@@ -25,7 +25,7 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-	preprocessors = { // for karma-coverage-istanbul-reporter
+	preprocessors : { // for karma-coverage-istanbul-reporter
 		'**/src/**/*.ts': 'coverage'
 	},
     reporters: ['progress', 'kjhtml', 'junit', 'coverage'],
