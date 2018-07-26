@@ -12,6 +12,7 @@ module.exports = function (config) {
       require('karma-coverage-istanbul-reporter'),
       require('@angular/cli/plugins/karma'),
       require('karma-teamcity-reporter'),
+	  require('karma-junit-reporter'),
       require('karma-phantomjs-launcher')
     ],
     client:{
@@ -24,7 +25,11 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml', 'junit'],
+	junitReporter: {
+      outputDir: '**/karma-results',
+      outputFile: 'karma-results.xml'
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
