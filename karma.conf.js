@@ -25,7 +25,10 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress', 'kjhtml', 'junit'],
+	preprocessors = { // for karma-coverage-istanbul-reporter
+		'**/src/**/*.ts': 'coverage'
+	};
+    reporters: ['progress', 'kjhtml', 'junit', 'coverage'],
 	junitReporter: {
       outputDir: '**/karma-results',
       outputFile: 'karma-results.xml'
