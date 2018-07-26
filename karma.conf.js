@@ -26,9 +26,9 @@ module.exports = function (config) {
       environment: 'dev'
     },
 	preprocessors : { // for karma-coverage-istanbul-reporter
-		'**/src/**/*.ts': 'coverage'
+		'**/src/**/*.ts': 'coverage-istanbul'
 	},
-    reporters: ['progress', 'kjhtml', 'junit', 'coverage'],
+    reporters: ['progress', 'kjhtml', 'junit', 'coverage-istanbul'],
 	junitReporter: {
       outputDir: '**/karma-results',
       outputFile: 'karma-results.xml'
