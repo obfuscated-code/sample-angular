@@ -27,7 +27,7 @@ module.exports = function (config) {
     },
 	preprocessors = { // for karma-coverage-istanbul-reporter
 		'**/src/**/*.ts': 'coverage'
-	};
+	},
     reporters: ['progress', 'kjhtml', 'junit', 'coverage'],
 	junitReporter: {
       outputDir: '**/karma-results',
