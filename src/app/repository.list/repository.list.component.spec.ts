@@ -12,7 +12,7 @@ describe('Repository.List.Component', () => {
   let testData: Repository[] = [
     new Repository("Test Project",
             "http://www.test.com/test",
-            "Just a test project",
+            "Just a sample project",
             100,
             200)
   ];
