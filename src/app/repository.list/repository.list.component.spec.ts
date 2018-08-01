@@ -53,7 +53,7 @@ describe('Repository.List.Component', () => {
   it('shows nothing when there is an error', () => {
     let getRepoList = spyOn(repositoryListService, 'getList').and.returnValue(
         new Observable(subscriber => {
-          subscriber.error("Some error!!!");
+          subscriber.error("Some error!!!!");
         })
     );
 
